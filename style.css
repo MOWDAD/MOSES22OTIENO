@@ -198,14 +198,66 @@ p{
     font-size: 70px;
 }
 .closeandopen{display: none;}
+/*adroid*/
 @media only screen and (max-width: 900px) {
    body{
-   
+   margin: 10%;
     background: url('https://t4.ftcdn.net/jpg/02/07/50/69/360_F_207506933_StbUwU42miTpdtO8lwliW9IJrqaW2m8L.jpg');
    
 }
 
+.name{
+   
+position: absolute;
+top: 30px;
+left: 10px;
+}
+.name h6{
+    font-size: 20px !important;
+   
+}
+span {
+   
+    position: absolute;
+   width: 100%;
+    top: 30%;
+    left: 10%;
+    background:transparent;
+    color: aliceblue;
+}
+.profile img{
+    top: 15%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+.ahome-sci{
+    position: absolute;
+    top: 90%;
+    left: 20%;
+   
 
+}
+.ahome-sci a{
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+}
+.ahome-sci a:hover{
+    background-color: #00abf0;
+}
+.descri{
+    position: absolute;
+    width: 90%;
+     top: 40%;
+     left: 10%;
+}
+.btn-box{
+position: absolute;
+top: 80%;
+}
 .header .menuicon  {
     display: block;
     width: 70px;
@@ -240,8 +292,8 @@ p{
     width: 250px;
     height: 400px;
     display: flex;
-    margin-top: 128%;
-    margin-left: 40%;
+    margin-top: 118%;
+    margin-left: 50%;
     border-top-left-radius: 10px;
     position: absolute;
     

@@ -11,10 +11,40 @@
     <title>Moses's Portfolio</title>
 </head>
 <body>
-    
+    <!---android-->
+    <div class="android">
+    <div class="name">
+        <h6 class="h1">MOSES OTIENO</h6>
+    </div>
+    <div class="profile">
+        <img src="MOSES OTIENO.jpg">
+       
+    </div>
+    <span><h1> <h1>HI <br>I'M MOSES OTIENO</h1></span>
+    <div class="descri">
+        <h2> I am a frontend Developer based in Kenya.<br>
+            I am passionate in website development and i have developed web applications and realtime applications such as online booking paltforms<br>
+             <br>I hope to work with you soon.
+    </div>
+    <div class="btn-box">
+        <a href="">Hire Me</a>
+        <a href="">Let's Talk</a>
+    </div>
+       
+   
+    <div class="ahome-sci">
+        <a href="https://www.facebook.com/profile.php?id=100074292634258"><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+        <a href="https://wa.me/254769933048?text=How&ref=blog.short.io"><i class='bx bxl-whatsapp-square'></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square'></i></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+       </div>
+
+</div>
+<!---laptop/desktop-->
     <header class="header">
         <div class="menuicon"  onclick="togglemenu()">
-        <img src="menu1.jpg" width="70px" height="70px" class="menu" onclick="togglemenu()">
+        <img src="menu1.jpg" width="70px" height="70px" class="menu" onclick="togglemenu()" id="menu">
     </div>
     
      </div>
@@ -61,6 +91,7 @@
     </section>
     <script>
         var dropdown = document.getElementById("dropdown");
+        var menu =document.getElementById("menu");
         dropdown.style.display =="none";
                function togglemenu(){
                 if(dropdown.style.display == "none")
@@ -71,15 +102,19 @@
                else
                {
                 dropdown.style.display ="flex";
+                menu.style.display = "none";
+
                
 
                }
             }
+            var menu =document.getElementById("menu");
             var dropdown = document.getElementById("dropdown");
             dropdown.style.display =="none";
             function clos(){
                 if(dropdown.style.display == "flex"){
                     dropdown.style.display ="none";
+                    menu.style.display="flex";
                 }
                 else{
                     dropdown.style.display ="flex";
