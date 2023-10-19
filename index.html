@@ -6,47 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <title>Moses's Portfolio</title>
 </head>
 <body>
+    
     <header class="header">
-    <a href="#" class="logo">moses</a>
-        <nav class="navbar">
+        <div class="menuicon"  onclick="togglemenu()">
+        <img src="menu1.jpg" width="70px" height="70px" class="menu" onclick="togglemenu()">
+    </div>
+    
+     </div>
 
-            
+
+        <nav class="navbar" id="dropdown">
+
+            <div class="a">
             <a href="#" class="active">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
+        </div>
+        <div class="clos"><img src="close2.png" width="30px" height="30px" onclick="clos()"></div>
+           
         </nav>
     </header>
     <section class="home">
-        <div class="container" style="display: flex;">
+        <div class="container">
         <div class="home-content">
             <h1>HI <br>I'M MOSES OTIENO</h1>
-            <h3>I Am a Front End Developer From Kenya</h3>
-            <p> I am a frontend Developer based in Kenya.<br>
-            I am passionate in website development and i have developed web applications and realtime applications such as  booking online booking paltforms
-             <br>I hope to work with you soon.</p>
+           <h2> I am a frontend Developer based in Kenya.<br>
+            I am passionate in website development and i have developed web applications and realtime applications such as online booking paltforms<br>
+             <br>I hope to work with you soon.</h2><br><br><br>
             <div class="btn-box">
                 <a href="">Hire Me</a>
                 <a href="">Let's Talk</a>
             </div>
         </div>
         <div class="image">
-            <img src="mo1.jpg" width="600px" height="400px">
+        <div class="h1"><H1>LET'S JOURNEY TOGETHER <br>AND  ACHIEVE THE BEST OUTCOME</H1></div>
+            <img src="mo1.jpg" height="400px" width="600px">
         </div>
     </div>
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100074292634258"><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href="https://wa.me/254769933048?text=How&ref=blog.short.io"><i class='bx bxl-whatsapp-square'></i></a>
             <a href="#"><i class='bx bxl-linkedin-square'></i></i></a>
-
-          
+            <a href="#"><i class='bx bxl-github'></i></a>
+           </div>
         </div>
     </section>
+    <script>
+        var dropdown = document.getElementById("dropdown");
+        dropdown.style.display =="none";
+               function togglemenu(){
+                if(dropdown.style.display == "none")
+                {
+                    dropdown.style.display ="flex";
+
+               }
+               else
+               {
+                dropdown.style.display ="flex";
+               
+
+               }
+            }
+            var dropdown = document.getElementById("dropdown");
+            dropdown.style.display =="none";
+            function clos(){
+                if(dropdown.style.display == "flex"){
+                    dropdown.style.display ="none";
+                }
+                else{
+                    dropdown.style.display ="flex";
+                }
+            }
+    </script>
 </body>
 </html>
