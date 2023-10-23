@@ -10,6 +10,9 @@
 body{
   color: #ededed; 
 }
+section .android{
+    display: none;
+}
 .menuicon{
 display: none;
 }
@@ -199,11 +202,14 @@ p{
 }
 .closeandopen{display: none;}
 /*adroid*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
    body{
    margin: 10%;
     background: url('https://t4.ftcdn.net/jpg/02/07/50/69/360_F_207506933_StbUwU42miTpdtO8lwliW9IJrqaW2m8L.jpg');
    
+}
+section .android{
+    display: block;
 }
 
 .name{
@@ -251,7 +257,7 @@ span {
 .descri{
     position: absolute;
     width: 90%;
-     top: 40%;
+     top: 29%;
      left: 10%;
 }
 .btn-box{
@@ -292,8 +298,8 @@ top: 80%;
     width: 250px;
     height: 400px;
     display: flex;
-    margin-top: 118%;
-    margin-left: 50%;
+    margin-top: 123%;
+    margin-left: 40%;
     border-top-left-radius: 10px;
     position: absolute;
     
